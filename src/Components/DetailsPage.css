@@ -1,0 +1,171 @@
+.details-container {
+  padding: 2rem;
+  font-family: "Inter", "Helvetica Neue", sans-serif;
+  background-color: #f6fdff;
+  color: #004d5a;
+  min-height: 100vh;
+}
+
+.city-title {
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
+  text-align: center;
+  color: #0097b2;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.error-message {
+  color: #b00020;
+  text-align: center;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.weather-now {
+  background-color: #ffffff;
+  padding: 3rem 2rem;
+  border-radius: 24px;
+  box-shadow: 0 10px 30px rgba(0, 151, 178, 0.1);
+  border: 1px solid #a0cdd9;
+  text-align: center;
+  margin-bottom: 3rem;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.weather-now:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(0, 151, 178, 0.2);
+}
+
+.weather-now h2 {
+  margin-bottom: 1.5rem;
+  font-weight: 700;
+  font-size: 1.8rem;
+}
+
+.weather-now img {
+  width: 100px;
+  margin-bottom: 1rem;
+}
+
+.temperature-large {
+  font-size: 2rem;
+  margin: 0.5rem 0;
+}
+
+.weather-description {
+  text-transform: capitalize;
+  color: #4a6f7f;
+  font-size: 1rem;
+  margin-bottom: 0;
+}
+
+.forecast-section h2 {
+  margin: 3rem 0 1.5rem 0;
+  font-weight: 700;
+  font-size: 1.8rem;
+  text-align: center;
+  color: #0097b2;
+}
+
+.forecast-card {
+  background-color: #ffffff;
+  padding: 2rem;
+  border-radius: 24px;
+  box-shadow: 0 10px 30px rgba(0, 151, 178, 0.1);
+  margin-bottom: 2rem;
+  border: 1px solid #a0cdd9;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.forecast-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(0, 151, 178, 0.2);
+}
+
+.forecast-card h3 {
+  font-size: 1.2rem;
+  border-bottom: 1px solid #c5e3f1;
+  padding-bottom: 0.5rem;
+  margin-bottom: 1rem;
+  color: #007a94;
+}
+
+.forecast-day {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 1.5rem;
+}
+
+.forecast-item {
+  background-color: #d4eefb;
+  padding: 1rem;
+  border-radius: 16px;
+  border: 1px solid #88c5dd;
+  text-align: center;
+  flex: 1 0 120px;
+  transition: background-color 0.3s ease;
+}
+
+.forecast-item:hover {
+  background-color: #b6dcf4;
+  cursor: default;
+}
+
+.forecast-item p {
+  margin: 0.3rem 0;
+}
+
+.time {
+  font-weight: 700;
+  color: #006d7e;
+}
+
+.temperature {
+  font-size: 1.1rem;
+  color: #004d5a;
+}
+
+.description {
+  text-transform: capitalize;
+  font-size: 0.9rem;
+  color: #4a6f7f;
+}
+
+.forecast-item img {
+  width: 60px;
+}
+
+.alert {
+  padding: 1rem;
+  margin: 1rem 0;
+  border-radius: 0.25rem;
+  font-weight: 600;
+}
+
+.alert-danger {
+  background-color: #fbeaea;
+  color: #841d24;
+  border: 1px solid #f3b4b9;
+}
+
+.spinner {
+  border: 6px solid #f3f3f3;
+  border-top: 6px solid #4a6f7f;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  animation: spin 1s linear infinite;
+  margin: auto;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
